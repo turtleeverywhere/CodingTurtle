@@ -5,7 +5,7 @@ const APP_DATA = [
   { key: 'cooked', image: '/images/cooked.jpg' },
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg' },
   { key: 'grabandgo', image: null },
-  { key: 'healthclaw', image: null },
+  { key: 'healthclaw', image: '/images/healthclaw.jpg' },
 ]
 
 function Apps() {
