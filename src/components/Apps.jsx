@@ -14,7 +14,8 @@ function Apps() {
   const { t } = useTranslation()
 
   return (
-    <section className="apps-section section" id="apps">
+    <section className="apps-section" id="apps">
+      <div className="section">
       <h2>{t('apps.title')}</h2>
       <p className="apps-subtitle">{t('apps.subtitle')}</p>
       <div className="apps-grid">
@@ -28,6 +29,7 @@ function Apps() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   )
