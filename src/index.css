@@ -265,6 +265,11 @@ header nav a:hover::after { width: 100%; }
     text-align: center;
 }
 
+.apps-section h2 {
+    left: auto;
+    transform: none;
+}
+
 .apps-subtitle {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -353,6 +358,8 @@ header nav a:hover::after { width: 100%; }
 
 .services-section h2 {
     color: white;
+    left: auto;
+    transform: none;
 }
 
 .services-section h2::after {
