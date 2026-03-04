@@ -4,7 +4,7 @@ const APP_DATA = [
   { key: 'roadtrip', image: '/images/roadtrip.jpg' },
   { key: 'cooked', image: '/images/cooked.jpg' },
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg' },
-  { key: 'grabandgo', image: null },
+  { key: 'grabandgo', image: '/images/grabandgo.jpg' },
   { key: 'healthclaw', image: '/images/healthclaw.jpg' },
 ]
 
