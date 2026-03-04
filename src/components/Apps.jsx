@@ -2,7 +2,7 @@ import { useTranslation } from '../i18n/LanguageContext'
 
 const APP_DATA = [
   { key: 'roadtrip', image: '/images/roadtrip.jpg' },
-  { key: 'cooked', image: null },
+  { key: 'cooked', image: '/images/cooked.jpg' },
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg' },
   { key: 'grabandgo', image: null },
   { key: 'healthclaw', image: null },
