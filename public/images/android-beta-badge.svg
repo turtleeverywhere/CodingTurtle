@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40">
+  <rect width="140" height="40" rx="5" fill="#1B1B1B"/>
+  <rect x="0.5" y="0.5" width="139" height="39" rx="4.5" fill="none" stroke="#a6a6a6" stroke-width="1"/>
+  <text x="14" y="12.5" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="6.5" letter-spacing="0.02em">Beta available on</text>
+  <text x="14" y="26" fill="#fff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="-0.01em">Android</text>
+  <g transform="translate(108, 8)">
+    <path d="M4.5 1.5L3.2 0.2C3 0 2.7 0 2.5 0.2S2.3 0.7 2.5 0.9L3.6 2C2.7 2.6 2 3.5 1.7 4.5h12.6c-0.3-1-1-1.9-1.9-2.5l1.1-1.1c0.2-0.2 0.2-0.5 0-0.7s-0.5-0.2-0.7 0L11.5 1.5C10.9 1.2 10.2 1 9.5 1S8.1 1.2 7.5 1.5zM6.5 3.5c-0.3 0-0.5-0.2-0.5-0.5s0.2-0.5 0.5-0.5S7 2.7 7 3s-0.2 0.5-0.5 0.5zm5 0c-0.3 0-0.5-0.2-0.5-0.5s0.2-0.5 0.5-0.5S12 2.7 12 3s-0.2 0.5-0.5 0.5zM1.7 5.5H1c-0.6 0-1 0.4-1 1v6c0 0.6 0.4 1 1 1h0.7V5.5zm1 9v2.5c0 0.8 0.7 1.5 1.5 1.5s1.5-0.7 1.5-1.5V14.5h3v2.5c0 0.8 0.7 1.5 1.5 1.5s1.5-0.7 1.5-1.5V14.5h1V5.5h-10v9zM16.3 5.5V13.5H17c0.6 0 1-0.4 1-1v-6c0-0.6-0.4-1-1-1h-0.7z" fill="#3DDC84" transform="scale(1.1) translate(2, 0)"/>
+  </g>
+</svg>

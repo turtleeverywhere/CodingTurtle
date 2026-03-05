@@ -344,9 +344,15 @@ header nav a:hover::after { width: 100%; }
     line-height: 1.7;
 }
 
+.app-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
 .app-store-badge {
     display: inline-block;
-    margin-top: 1rem;
     transition: opacity 0.2s ease;
 }
 
@@ -357,6 +363,7 @@ header nav a:hover::after { width: 100%; }
 .app-store-badge img {
     height: 40px;
     width: auto;
+    border-radius: 5px;
 }
 
 /* Services Section */

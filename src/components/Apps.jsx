@@ -2,7 +2,7 @@ import { useTranslation } from '../i18n/LanguageContext'
 
 const APP_DATA = [
   { key: 'roadtrip', image: '/images/roadtrip.jpg', appStore: null },
-  { key: 'cooked', image: '/images/cooked.jpg', appStore: null },
+  { key: 'cooked', image: '/images/cooked.jpg', appStore: null, testflight: 'https://testflight.apple.com/join/74F5t5AY', androidBeta: 'https://appdistribution.firebase.dev/i/37c8e2c661f1ecc5' },
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg', appStore: null },
   { key: 'grabandgo', image: '/images/grabandgo.jpg', appStore: 'https://apps.apple.com/app/grab-go/id6738431717' },
   { key: 'healthclaw', image: '/images/healthclaw.jpg', appStore: null },
@@ -37,11 +37,23 @@ function Apps() {
                   <h3>{t(`apps.${app.key}.name`)}</h3>
                   <span className="app-tagline">{t(`apps.${app.key}.tagline`)}</span>
                   <p>{t(`apps.${app.key}.desc`)}</p>
-                  {app.appStore && (
-                    <a href={app.appStore} target="_blank" rel="noopener noreferrer" className="app-store-badge">
-                      <img src="/images/app-store-badge.svg" alt="Download on the App Store" />
-                    </a>
-                  )}
+                  <div className="app-badges">
+                    {app.appStore && (
+                      <a href={app.appStore} target="_blank" rel="noopener noreferrer" className="app-store-badge">
+                        <img src="/images/app-store-badge.svg" alt="Download on the App Store" />
+                      </a>
+                    )}
+                    {app.testflight && (
+                      <a href={app.testflight} target="_blank" rel="noopener noreferrer" className="app-store-badge">
+                        <img src="/images/testflight-badge.svg" alt="Join the Beta on TestFlight" />
+                      </a>
+                    )}
+                    {app.androidBeta && (
+                      <a href={app.androidBeta} target="_blank" rel="noopener noreferrer" className="app-store-badge">
+                        <img src="/images/android-beta-badge.svg" alt="Join the Android Beta" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             )
