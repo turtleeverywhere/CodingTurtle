@@ -6,6 +6,7 @@ const APP_DATA = [
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg', appStore: null },
   { key: 'grabandgo', image: '/images/grabandgo.jpg', appStore: 'https://apps.apple.com/app/grab-go/id6738431717' },
   { key: 'healthclaw', image: '/images/healthclaw.jpg', appStore: null },
+  { key: 'localgpt', image: null, appStore: 'https://apps.apple.com/app/localgpt-offline-chatbot/id6749968509' },
 ]
 
 function Apps() {

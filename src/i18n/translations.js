@@ -29,6 +29,9 @@ export const translations = {
     'apps.healthclaw.name': 'HealthClaw',
     'apps.healthclaw.tagline': 'AI Health Insights',
     'apps.healthclaw.desc': 'Sync Apple Health data and get AI-powered health analysis and recommendations.',
+    'apps.localgpt.name': 'LocalGPT',
+    'apps.localgpt.tagline': 'Offline AI Chatbot',
+    'apps.localgpt.desc': 'A fully private chatbot running on-device with Apple Intelligence. No internet needed, no data leaves your phone.',
 
     // Services Section
     'services.title': 'What We Build',
@@ -97,6 +100,9 @@ export const translations = {
     'apps.healthclaw.name': 'HealthClaw',
     'apps.healthclaw.tagline': 'KI-Gesundheitseinblicke',
     'apps.healthclaw.desc': 'Apple Health Daten synchronisieren und KI-gestützte Gesundheitsanalysen erhalten.',
+    'apps.localgpt.name': 'LocalGPT',
+    'apps.localgpt.tagline': 'Offline KI-Chatbot',
+    'apps.localgpt.desc': 'Ein vollständig privater Chatbot, der mit Apple Intelligence direkt auf dem Gerät läuft. Kein Internet nötig, keine Daten verlassen dein Handy.',
 
     // Services Section
     'services.title': 'Was wir bauen',
