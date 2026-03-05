@@ -41,7 +41,7 @@ export const translations = {
     'services.web.cta': 'Get a Quote',
     'services.app.title': 'App Development',
     'services.app.subtitle': 'as a Service',
-    'services.app.desc': 'Native and cross-platform mobile apps for iOS and Android. Flutter, Swift, and React Native.',
+    'services.app.desc': 'Native and cross-platform mobile apps for iOS and Android. Flutter and Swift.',
     'services.app.cta': 'Get a Quote',
 
     // Contact
@@ -112,7 +112,7 @@ export const translations = {
     'services.web.cta': 'Angebot anfragen',
     'services.app.title': 'App-Entwicklung',
     'services.app.subtitle': 'als Dienstleistung',
-    'services.app.desc': 'Native und plattformübergreifende mobile Apps für iOS und Android. Flutter, Swift und React Native.',
+    'services.app.desc': 'Native und plattformübergreifende mobile Apps für iOS und Android. Flutter und Swift.',
     'services.app.cta': 'Angebot anfragen',
 
     // Contact
