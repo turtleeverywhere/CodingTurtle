@@ -344,6 +344,21 @@ header nav a:hover::after { width: 100%; }
     line-height: 1.7;
 }
 
+.app-store-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    transition: opacity 0.2s ease;
+}
+
+.app-store-badge:hover {
+    opacity: 0.8;
+}
+
+.app-store-badge img {
+    height: 40px;
+    width: auto;
+}
+
 /* Services Section */
 .services-section {
     background: var(--primary);

@@ -1,11 +1,11 @@
 import { useTranslation } from '../i18n/LanguageContext'
 
 const APP_DATA = [
-  { key: 'roadtrip', image: '/images/roadtrip.jpg' },
-  { key: 'cooked', image: '/images/cooked.jpg' },
-  { key: 'flyingbroom', image: '/images/flyingbroom.jpg' },
-  { key: 'grabandgo', image: '/images/grabandgo.jpg' },
-  { key: 'healthclaw', image: '/images/healthclaw.jpg' },
+  { key: 'roadtrip', image: '/images/roadtrip.jpg', appStore: null },
+  { key: 'cooked', image: '/images/cooked.jpg', appStore: null },
+  { key: 'flyingbroom', image: '/images/flyingbroom.jpg', appStore: null },
+  { key: 'grabandgo', image: '/images/grabandgo.jpg', appStore: 'https://apps.apple.com/app/grab-go/id6738431717' },
+  { key: 'healthclaw', image: '/images/healthclaw.jpg', appStore: null },
 ]
 
 function Apps() {
@@ -36,6 +36,11 @@ function Apps() {
                   <h3>{t(`apps.${app.key}.name`)}</h3>
                   <span className="app-tagline">{t(`apps.${app.key}.tagline`)}</span>
                   <p>{t(`apps.${app.key}.desc`)}</p>
+                  {app.appStore && (
+                    <a href={app.appStore} target="_blank" rel="noopener noreferrer" className="app-store-badge">
+                      <img src="/images/app-store-badge.svg" alt="Download on the App Store" />
+                    </a>
+                  )}
                 </div>
               </div>
             )
