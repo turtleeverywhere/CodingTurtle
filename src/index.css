@@ -129,6 +129,39 @@ header nav a::after {
 header nav a:hover { color: var(--primary); }
 header nav a:hover::after { width: 100%; }
 
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #5865F2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-family: 'Kadwa', serif;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.discord-btn:hover {
+    background: #4752C4;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(88, 101, 242, 0.4);
+}
+
+.discord-btn svg {
+    flex-shrink: 0;
+}
+
+.mobile-discord-btn {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
 .language-toggle {
     background: transparent;
     border: 1px solid var(--primary);
