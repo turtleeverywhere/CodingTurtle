@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - Grab & Go</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .privacy-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .effective-date {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+            color: #5a6acf;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #4a5568;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #fdcb6e;
+        }
+
+        .highlight-box p {
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-section h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border: none;
+            padding-bottom: 0;
+        }
+
+        .email-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .email-link:hover {
+            color: #5a6acf;
+            border-bottom-color: #5a6acf;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="privacy-card fade-in">
+            <div class="header">
+                <h1>Datenschutzerklärung</h1>
+                <div class="subtitle">Grab & Go Mobile-App</div>
+            </div>
+            
+            <div class="content">
+                <div class="effective-date">
+                    <strong>Gültigkeitsdatum:</strong> 18. Juni 2025
+                </div>
+
+                <p>Diese Datenschutzerklärung beschreibt, wie Lars Grof („wir", „uns" oder „unser") Informationen in der mobilen Anwendung „Grab & Go" (die „App") behandelt.</p>
+
+                <div class="section">
+                    <h2>1. Keine Erhebung personenbezogener Daten</h2>
+                    <div class="highlight-box">
+                        <p><strong>Ausnahme:</strong> Anonymisierte Absturzberichte (wenn Nutzer zustimmt)</p>
+                    </div>
+                    
+                    <p>Wir verpflichten uns zum Schutz der Privatsphäre unserer Nutzer. Die Grab & Go App erhebt grundsätzlich keine personenbezogenen Daten von ihren Nutzern.</p>
+                    
+                    <p><strong>Das bedeutet:</strong></p>
+                    <ul>
+                        <li>Wir fragen nicht nach personenbezogenen Daten, sammeln, speichern oder übertragen keine personenbezogenen Informationen (wie Ihren Namen, E-Mail-Adresse, Standort, Telefonnummer oder andere Informationen, die Sie identifizieren könnten).</li>
+                        <li>Die App erfordert keine Anmeldung oder Kontoerstellung.</li>
+                        <li>Wir verwenden keine Analyse-Tools, Tracking-Technologien oder Cookies innerhalb der App, um Informationen über Ihre Nutzung oder Ihr Verhalten für Marketing- oder Profilierungszwecke zu sammeln.</li>
+                        <li>Keine Daten, persönlich oder anderweitig, werden von Ihrem Gerät an unsere Server oder Server von Dritten für unsere eigenen operativen oder Marketing-Zwecke übertragen.</li>
+                    </ul>
+
+                    <h3>Ausnahme: Xcode/App Store Connect Absturzberichte (wenn Nutzer zustimmt)</h3>
+                    
+                    <p>Bei der Verwendung eines iOS-Geräts haben Nutzer die Möglichkeit, Diagnose- und Nutzungsinformationen mit Apple und App-Entwicklern zu teilen. Wenn Sie als Nutzer explizit der Option "Mit App-Entwicklern teilen" in den Datenschutz- und Sicherheitseinstellungen Ihres Geräts zugestimmt haben, kann Apple uns automatisch anonymisierte Absturzberichte zur Verfügung stellen.</p>
+
+                    <p>Diese Absturzberichte werden von Apples Systemen generiert (z.B. Xcode-Absturzberichte, App Store Connect-Absturzberichte) und enthalten technische Informationen über App-Abstürze. Diese Informationen umfassen typischerweise:</p>
+                    
+                    <ul>
+                        <li>Details darüber, wie die App beendet wurde (z.B. Backtrace von Threads, Speicherverbrauch zum Zeitpunkt des Absturzes).</li>
+                        <li>Gerätemodell und Betriebssystemversion.</li>
+                        <li>Die App-Version.</li>
+                    </ul>
+
+                    <p>Diese Daten werden von Apple anonymisiert, bevor sie uns erreichen, und können nicht zur persönlichen Identifizierung verwendet werden. Wir verwenden diese Absturzberichte ausschließlich zur Identifizierung und Behebung von Fehlern, zur Verbesserung der App-Stabilität und zur Verbesserung der gesamten Benutzererfahrung. Wir versuchen nicht, einzelne Nutzer aus diesen Daten zu re-identifizieren.</p>
+                </div>
+
+                <div class="section">
+                    <h2>2. Keine Speicherung von Nutzerdaten</h2>
+                    <div class="highlight-box">
+                        <p><strong>Ausgenommen:</strong> Anonymisierte Absturzberichte</p>
+                    </div>
+                    
+                    <p>Abgesehen von den oben erwähnten anonymisierten Absturzberichten (die von Apple verarbeitet und uns ohne persönliche Identifikatoren zur Verfügung gestellt werden), werden keine anderen Nutzerdaten von uns, auf unseren Servern oder von Dritten in unserem Auftrag gespeichert. Alle Informationen, die Sie möglicherweise in der App eingeben oder generieren (falls zutreffend, z.B. temporäre Listen oder Einstellungen), werden nur lokal auf Ihrem Gerät gespeichert und sind für uns nicht zugänglich.</p>
+                </div>
+
+                <div class="section">
+                    <h2>3. Kein Zugriff durch Dritte</h2>
+                    <div class="highlight-box">
+                        <p><strong>Ausgenommen:</strong> Apples Absturzberichtsdienst</p>
+                    </div>
+                    
+                    <p>Da wir keine Daten sammeln, gibt es keine Daten, die wir mit Dritten teilen oder an sie verkaufen könnten, außer den anonymisierten Absturzberichten, die uns von Apple basierend auf den Datenschutzeinstellungen Ihres Geräts zur Verfügung gestellt werden.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. Datenschutz von Kindern</h2>
+                    
+                    <p>Grab & Go sammelt keine persönlichen Informationen von niemandem, einschließlich Kindern. Bezüglich der Absturzberichte, da diese anonymisiert sind und nur mit der expliziten gerätebezogenen Zustimmung des Nutzers gesammelt werden, beeinträchtigen sie nicht den Datenschutz von Kindern. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und glauben, dass persönliche Informationen Ihres Kindes versehentlich gesammelt wurden, kontaktieren Sie uns bitte unter der unten angegebenen E-Mail-Adresse, und wir werden Schritte unternehmen, um sicherzustellen, dass keine solchen Informationen existieren.</p>
+                </div>
+
+                <div class="section">
+                    <h2>5. Änderungen dieser Datenschutzerklärung</h2>
+                    
+                    <p>Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzerklärung innerhalb der App oder auf unserer Website veröffentlichen (falls zutreffend). Es wird empfohlen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h2>6. Kontakt</h2>
+                    <p>Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder unseren Praktiken bezüglich Ihrer Daten haben, kontaktieren Sie uns bitte unter:</p>
+                    <a href="mailto:lars.app.development@gmail.com" class="email-link">lars.app.development@gmail.com</a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="../../" class="back-button">← Zurück zu Grab & Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sections on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html> 

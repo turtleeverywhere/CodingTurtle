@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - LocalGPT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .privacy-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .effective-date {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+            color: #5a6acf;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #4a5568;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #fdcb6e;
+        }
+
+        .highlight-box p {
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-section h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border: none;
+            padding-bottom: 0;
+        }
+
+        .email-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .email-link:hover {
+            color: #5a6acf;
+            border-bottom-color: #5a6acf;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="privacy-card fade-in">
+            <div class="header">
+                <h1>Datenschutzerklärung</h1>
+                <div class="subtitle">LocalGPT Mobile-App</div>
+            </div>
+            
+            <div class="content">
+                <div class="effective-date">
+                    <strong>Gültigkeitsdatum:</strong> 15. Januar 2025
+                </div>
+
+                <p>Diese Datenschutzerklärung beschreibt, wie Lars Grof („wir", „uns" oder „unser") Informationen in der mobilen Anwendung „LocalGPT" (die „App") behandelt.</p>
+
+                <div class="section">
+                    <h2>1. Vollständig lokaler Betrieb</h2>
+                    <div class="highlight-box">
+                        <p><strong>Hauptmerkmal:</strong> Alle KI-Verarbeitung findet lokal auf Ihrem Gerät statt</p>
+                    </div>
+                    
+                    <p>LocalGPT wurde mit Datenschutz als Kernprinzip entwickelt. Der gesamte KI-Assistent läuft vollständig auf Ihrem Gerät ohne jegliche externe Kommunikation.</p>
+                    
+                    <p><strong>Das bedeutet:</strong></p>
+                    <ul>
+                        <li>Keine Gespräche, Anfragen oder Antworten werden jemals an externe Server übertragen</li>
+                        <li>Alle KI-Verarbeitung findet lokal auf Ihrem Gerät mit geräteeigenen Modellen statt</li>
+                        <li>Für die Kernfunktionalität ist keine Internetverbindung erforderlich</li>
+                        <li>Ihre Gespräche bleiben vollständig privat und verlassen niemals Ihr Gerät</li>
+                        <li>Wir können nicht auf Ihre Interaktionen mit der KI zugreifen, diese einsehen oder analysieren</li>
+                    </ul>
+
+                    <h3>Ausnahme: Optionale Absturzberichte</h3>
+                    
+                    <p>Ähnlich wie bei anderen iOS-Apps kann Apple uns anonymisierte Absturzberichte zur Verfügung stellen, wenn Sie „Mit App-Entwicklern teilen" in den Datenschutzeinstellungen Ihres Geräts aktiviert haben, um die App-Stabilität zu verbessern. Diese Berichte enthalten keine persönlichen Informationen oder Gesprächsdaten.</p>
+                </div>
+
+                <div class="section">
+                    <h2>2. Lokale Datenspeicherung mit iCloud</h2>
+                    <div class="highlight-box">
+                        <p><strong>Private Cloud-Speicherung:</strong> Daten bleiben in Ihrem persönlichen Apple-Ökosystem</p>
+                    </div>
+                    
+                    <p>Wir sammeln, speichern nicht und haben keinen Zugriff auf Nutzerdaten, Gespräche oder persönliche Informationen. Alle App-Daten werden sicher mit Apples iCloud gespeichert, was bedeutet:</p>
+                    
+                    <ul>
+                        <li><strong>Gesprächsverlauf</strong> - Gespeichert in Ihrem persönlichen iCloud-Account</li>
+                        <li><strong>Nutzereinstellungen und -präferenzen</strong> - Synchronisiert über Ihre Apple-Geräte via iCloud</li>
+                        <li><strong>KI-Modell-Interaktionen</strong> - Aufbewahrt in Ihrem privaten iCloud-Speicher</li>
+                        <li><strong>Persönliche Informationen</strong> - Geschützt durch Apples iCloud-Verschlüsselung</li>
+                    </ul>
+                    
+                    <p>Ihre Daten bleiben unter Ihrer Kontrolle innerhalb von Apples sicherer iCloud-Infrastruktur. Wir haben niemals Zugriff auf Ihre iCloud-Daten, und sie sind durch Apples Ende-zu-Ende-Verschlüsselungsstandards geschützt. Dies ermöglicht es Ihnen, Ihre Gespräche nahtlos über Ihre Apple-Geräte zu synchronisieren und dabei vollständige Privatsphäre zu wahren.</p>
+                </div>
+
+                <div class="section">
+                    <h2>3. Kein Zugriff durch Dritte</h2>
+                    <div class="highlight-box">
+                        <p><strong>Vollständig offline:</strong> Keine externen Dienste beteiligt</p>
+                    </div>
+                    
+                    <p>Da LocalGPT vollständig offline ohne Datenübertragung funktioniert, werden keine Informationen mit Dritten geteilt. Keine Analysedienste, Werbenetzwerke oder andere externe Dienste haben Zugriff auf Ihre Daten.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. Datensicherheit</h2>
+                    
+                    <p>Ihre Gespräche und Datensicherheit sind durch mehrere Ebenen geschützt:</p>
+                    
+                    <ul>
+                        <li><strong>Gerätesicherheit:</strong> Verwendung von Gerätesperrbildschirmen und Authentifizierung</li>
+                        <li><strong>iCloud-Verschlüsselung:</strong> Ihre Daten sind durch Apples Ende-zu-Ende-Verschlüsselung geschützt</li>
+                        <li><strong>Apple-ID-Schutz:</strong> Sichern Sie Ihre Apple-ID mit Zwei-Faktor-Authentifizierung</li>
+                        <li><strong>Systemupdates:</strong> Halten Sie das Betriebssystem Ihres Geräts aktuell</li>
+                        <li><strong>Physischer Zugang:</strong> Jeder mit Zugang zu Ihrem entsperrten Gerät kann auf die App zugreifen</li>
+                    </ul>
+                    
+                    <p>Durch die Verwendung von iCloud profitieren Ihre Daten von Apples branchenführender Sicherheitsinfrastruktur und bleiben dabei vollständig privat vor uns und Dritten.</p>
+                </div>
+
+                <div class="section">
+                    <h2>5. Datenschutz von Kindern</h2>
+                    
+                    <p>LocalGPT sammelt keine persönlichen Informationen von niemandem, einschließlich Kindern. Da alle Verarbeitung lokal auf dem Gerät ohne Datenübertragung stattfindet, ist die Privatsphäre von Kindern vollständig geschützt. Eltern können die App mit Vertrauen nutzen, da sie wissen, dass keine Gespräche oder Interaktionen das Gerät verlassen.</p>
+                </div>
+
+                <div class="section">
+                    <h2>6. Änderungen dieser Datenschutzerklärung</h2>
+                    
+                    <p>Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über alle Änderungen informieren, indem wir die neue Datenschutzerklärung innerhalb der App veröffentlichen. Es wird empfohlen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h2>7. Kontakt</h2>
+                    <p>Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder unseren Praktiken haben, kontaktieren Sie uns bitte unter:</p>
+                    <a href="mailto:lars.app.development@gmail.com" class="email-link">lars.app.development@gmail.com</a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="../../" class="back-button">← Zurück zu LocalGPT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sections on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

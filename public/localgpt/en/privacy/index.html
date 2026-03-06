@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LocalGPT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .privacy-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .effective-date {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+            color: #5a6acf;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: #4a5568;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #fdcb6e;
+        }
+
+        .highlight-box p {
+            color: #2d3436;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-section h2 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            border: none;
+            padding-bottom: 0;
+        }
+
+        .email-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .email-link:hover {
+            color: #5a6acf;
+            border-bottom-color: #5a6acf;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="privacy-card fade-in">
+            <div class="header">
+                <h1>Privacy Policy</h1>
+                <div class="subtitle">LocalGPT Mobile Application</div>
+            </div>
+            
+            <div class="content">
+                <div class="effective-date">
+                    <strong>Effective Date:</strong> January 15, 2025
+                </div>
+
+                <p>This Privacy Policy describes how Lars Grof ("we," "us," or "our") handles information in the "LocalGPT" mobile application (the "App").</p>
+
+                <div class="section">
+                    <h2>1. Complete Local Operation</h2>
+                    <div class="highlight-box">
+                        <p><strong>Key Feature:</strong> All AI processing happens locally on your device</p>
+                    </div>
+                    
+                    <p>LocalGPT is designed with privacy as the core principle. The entire AI assistant runs completely on your device without any external communication.</p>
+                    
+                    <p><strong>This means:</strong></p>
+                    <ul>
+                        <li>No conversations, queries, or responses are ever transmitted to external servers</li>
+                        <li>All AI processing happens locally on your device using on-device models</li>
+                        <li>No internet connection is required for core functionality</li>
+                        <li>Your conversations remain completely private and never leave your device</li>
+                        <li>We cannot access, view, or analyze any of your interactions with the AI</li>
+                    </ul>
+
+                    <h3>Exception: Optional Crash Reports</h3>
+                    
+                    <p>Similar to other iOS apps, if you have enabled "Share with App Developers" in your device's privacy settings, Apple may provide us with anonymized crash reports to help improve app stability. These reports contain no personal information or conversation data.</p>
+                </div>
+
+                <div class="section">
+                    <h2>2. Local Data Storage with iCloud</h2>
+                    <div class="highlight-box">
+                        <p><strong>Private Cloud Storage:</strong> Data stays within your personal Apple ecosystem</p>
+                    </div>
+                    
+                    <p>We do not collect, store, or have access to any user data, conversations, or personal information. All app data is stored securely using Apple's iCloud, which means:</p>
+                    
+                    <ul>
+                        <li><strong>Conversation history</strong> - Stored in your personal iCloud account</li>
+                        <li><strong>User preferences and settings</strong> - Synced across your Apple devices via iCloud</li>
+                        <li><strong>AI model interactions</strong> - Kept within your private iCloud storage</li>
+                        <li><strong>Personal information</strong> - Protected by Apple's iCloud encryption</li>
+                    </ul>
+                    
+                    <p>Your data remains under your control within Apple's secure iCloud infrastructure. We never have access to your iCloud data, and it's protected by Apple's end-to-end encryption standards. This allows you to seamlessly sync your conversations across your Apple devices while maintaining complete privacy.</p>
+                </div>
+
+                <div class="section">
+                    <h2>3. No Third-Party Access</h2>
+                    <div class="highlight-box">
+                        <p><strong>Completely Offline:</strong> No external services involved</p>
+                    </div>
+                    
+                    <p>Because LocalGPT operates entirely offline with no data transmission, there is no sharing of information with third parties. No analytics services, advertising networks, or other external services have access to your data.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. Data Security</h2>
+                    
+                    <p>Your conversations and data security are protected through multiple layers:</p>
+                    
+                    <ul>
+                        <li><strong>Device Security:</strong> Use device lock screens and authentication</li>
+                        <li><strong>iCloud Encryption:</strong> Your data is protected by Apple's end-to-end encryption</li>
+                        <li><strong>Apple ID Protection:</strong> Secure your Apple ID with two-factor authentication</li>
+                        <li><strong>System Updates:</strong> Keep your device's operating system updated</li>
+                        <li><strong>Physical Access:</strong> Anyone with access to your unlocked device can access the app</li>
+                    </ul>
+                    
+                    <p>By using iCloud, your data benefits from Apple's industry-leading security infrastructure while remaining completely private from us and third parties.</p>
+                </div>
+
+                <div class="section">
+                    <h2>5. Children's Privacy</h2>
+                    
+                    <p>LocalGPT does not collect any personal information from anyone, including children. Since all processing happens locally on the device with no data transmission, children's privacy is fully protected. Parents can use the app with confidence knowing that no conversations or interactions leave the device.</p>
+                </div>
+
+                <div class="section">
+                    <h2>6. Changes to This Privacy Policy</h2>
+                    
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App. You are advised to review this Privacy Policy periodically for any changes.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h2>7. Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us at:</p>
+                    <a href="mailto:lars.app.development@gmail.com" class="email-link">lars.app.development@gmail.com</a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="../../" class="back-button">← Back to LocalGPT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sections on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>

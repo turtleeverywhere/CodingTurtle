@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalGPT - Choose Your Language</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .language-selector {
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem 3rem 2rem;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .app-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .app-description {
+            font-size: 1rem;
+            opacity: 0.8;
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 3rem 2rem 4rem 2rem;
+        }
+
+        .language-title {
+            font-size: 2rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .language-subtitle {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .language-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .language-card {
+            background: #f8f9ff;
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .language-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .language-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+            background: white;
+        }
+
+        .flag-emoji {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .language-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .language-native {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .language-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .page-link {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .page-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+            color: white;
+        }
+
+        .features-preview {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .features-title {
+            font-size: 1.4rem;
+            color: #2d3748;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .feature-text {
+            font-size: 0.9rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        .back-link {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.8rem 1.5rem;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .language-selector {
+                margin: 1rem;
+                width: calc(100% - 2rem);
+            }
+
+            .header {
+                padding: 3rem 1.5rem 2rem 1.5rem;
+            }
+
+            .app-title {
+                font-size: 2.5rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem 3rem 1.5rem;
+            }
+
+            .language-options {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .language-card {
+                padding: 2rem 1.5rem;
+            }
+
+            .language-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        .slide-up {
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Stagger animation for language cards */
+        .language-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .language-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector fade-in">
+        <div class="header">
+            <h1 class="app-title">LocalGPT</h1>
+            <div class="app-subtitle">Private AI Assistant</div>
+            <div class="app-description">
+                Your personal AI assistant that runs completely offline. Keep your conversations private and secure!
+            </div>
+        </div>
+        
+        <div class="content">
+            <h2 class="language-title">Choose Your Language</h2>
+            <p class="language-subtitle">
+                Select your preferred language to access privacy policy, support, and app information.
+            </p>
+            
+            <div class="language-options">
+                <div class="language-card slide-up">
+                    <span class="flag-emoji">🇺🇸</span>
+                    <div class="language-name">English</div>
+                    <div class="language-native">English</div>
+                    <div class="language-links">
+                        <a href="en/privacy/" class="page-link">Privacy Policy</a>
+                        <a href="en/support/" class="page-link">Support</a>
+                    </div>
+                </div>
+                
+                <div class="language-card slide-up">
+                    <span class="flag-emoji">🇩🇪</span>
+                    <div class="language-name">German</div>
+                    <div class="language-native">Deutsch</div>
+                    <div class="language-links">
+                        <a href="de/Datenschutz/" class="page-link">Datenschutz</a>
+                        <a href="de/support/" class="page-link">Support</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-preview">
+                <h3 class="features-title">🌟 Key Features</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <span class="feature-icon">🤖</span>
+                        <div class="feature-text">AI Assistant</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">📱</span>
+                        <div class="feature-text">Offline Operation</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🔒</span>
+                        <div class="feature-text">Privacy First</div>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <div class="feature-text">Fast Response</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-link">
+                <a href="../" class="back-button">← Back to Main Site</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth hover effects and animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageCards = document.querySelectorAll('.language-card');
+            
+            languageCards.forEach((card, index) => {
+                // Add staggered animation
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+                
+                // Add click sound effect (visual feedback)
+                card.addEventListener('click', function(e) {
+                    // Only prevent default if clicking on the card itself, not the links
+                    if (e.target === card || card.contains(e.target) && !e.target.classList.contains('page-link')) {
+                        const firstLink = card.querySelector('.page-link');
+                        if (firstLink) {
+                            firstLink.click();
+                        }
+                    }
+                });
+            });
+
+            // Add parallax effect to header background
+            document.addEventListener('mousemove', function(e) {
+                const header = document.querySelector('.header');
+                const x = (e.clientX / window.innerWidth) * 100;
+                const y = (e.clientY / window.innerHeight) * 100;
+                
+                header.style.backgroundPosition = `${x}% ${y}%`;
+            });
+        });
+    </script>
+</body>
+</html>
