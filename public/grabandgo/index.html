@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grab & Go - Choose Your Language</title>
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Kadwa:700|Kadwa:400');
+
+        :root {
+            --text: #1f051a;
+            --background: #D4E4E9;
+            --primary: #008BB3;
+            --secondary: #33B5D6;
+            --accent: #E8853D;
+            --gradient-main: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -12,10 +23,10 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Kadwa', serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--background);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -34,7 +45,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-main);
             color: white;
             padding: 4rem 2rem 3rem 2rem;
             position: relative;
@@ -84,14 +95,14 @@
 
         .language-title {
             font-size: 2rem;
-            color: #2d3748;
+            color: var(--text);
             margin-bottom: 1rem;
             font-weight: 600;
         }
 
         .language-subtitle {
             font-size: 1.1rem;
-            color: #4a5568;
+            color: var(--text);
             margin-bottom: 3rem;
             line-height: 1.6;
         }
@@ -104,7 +115,7 @@
         }
 
         .language-card {
-            background: #f8f9ff;
+            background: var(--background);
             border-radius: 20px;
             padding: 2.5rem 2rem;
             transition: all 0.3s ease;
@@ -123,13 +134,13 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-main);
         }
 
         .language-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
-            border-color: #667eea;
+            box-shadow: 0 20px 40px rgba(0, 139, 179, 0.2);
+            border-color: var(--accent);
             background: white;
         }
 
@@ -142,13 +153,13 @@
         .language-name {
             font-size: 1.5rem;
             font-weight: 600;
-            color: #2d3748;
+            color: var(--text);
             margin-bottom: 0.5rem;
         }
 
         .language-native {
             font-size: 1.1rem;
-            color: #4a5568;
+            color: var(--text);
             margin-bottom: 1rem;
         }
 
@@ -160,7 +171,7 @@
         }
 
         .page-link {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-main);
             color: white;
             padding: 0.6rem 1.2rem;
             border-radius: 12px;
@@ -168,24 +179,24 @@
             font-size: 0.9rem;
             font-weight: 500;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 139, 179, 0.3);
         }
 
         .page-link:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 6px 16px rgba(0, 139, 179, 0.4);
             color: white;
         }
 
         .features-preview {
             margin-top: 3rem;
             padding-top: 3rem;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid rgba(0, 139, 179, 0.2);
         }
 
         .features-title {
             font-size: 1.4rem;
-            color: #2d3748;
+            color: var(--text);
             margin-bottom: 2rem;
             font-weight: 600;
         }
@@ -209,32 +220,32 @@
 
         .feature-text {
             font-size: 0.9rem;
-            color: #4a5568;
+            color: var(--text);
             font-weight: 500;
         }
 
         .back-link {
             margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid #e2e8f0;
+            border-top: 1px solid rgba(0, 139, 179, 0.2);
         }
 
         .back-button {
             display: inline-block;
-            color: #667eea;
+            color: var(--primary);
             text-decoration: none;
             font-weight: 500;
             padding: 0.8rem 1.5rem;
-            border: 2px solid #667eea;
+            border: 2px solid var(--primary);
             border-radius: 25px;
             transition: all 0.3s ease;
         }
 
         .back-button:hover {
-            background: #667eea;
+            background: var(--primary);
             color: white;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 6px 20px rgba(0, 139, 179, 0.3);
         }
 
         @media (max-width: 768px) {
@@ -375,7 +386,7 @@
             </div>
 
             <div class="back-link">
-                <a href="../" class="back-button">← Back to Main Site</a>
+                <a href="/" class="back-button">← Back to Main Site</a>
             </div>
         </div>
     </div>

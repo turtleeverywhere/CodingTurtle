@@ -14,6 +14,7 @@ export const translations = {
     // Apps Section
     'apps.title': 'Our Apps',
     'apps.subtitle': 'Real products built by Coding Turtle',
+    'apps.supportAndPrivacy': 'Support & Privacy →',
     'apps.cooked.name': 'Cooked',
     'apps.cooked.tagline': 'Your Kitchen Companion',
     'apps.cooked.desc': 'Meal planning, grocery lists, and recipe management for busy households.',
@@ -85,6 +86,7 @@ export const translations = {
     // Apps Section
     'apps.title': 'Unsere Apps',
     'apps.subtitle': 'Echte Produkte, entwickelt von Coding Turtle',
+    'apps.supportAndPrivacy': 'Support & Datenschutz →',
     'apps.cooked.name': 'Cooked',
     'apps.cooked.tagline': 'Dein Küchenbegleiter',
     'apps.cooked.desc': 'Essensplanung, Einkaufslisten und Rezeptverwaltung für beschäftigte Haushalte.',

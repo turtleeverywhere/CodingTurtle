@@ -4,9 +4,9 @@ const APP_DATA = [
   { key: 'roadtrip', image: '/images/roadtrip.jpg', appStore: null },
   { key: 'cooked', image: '/images/cooked.jpg', appStore: null, testflight: 'https://testflight.apple.com/join/74F5t5AY', androidBeta: 'https://appdistribution.firebase.dev/i/37c8e2c661f1ecc5' },
   { key: 'flyingbroom', image: '/images/flyingbroom.jpg', appStore: null },
-  { key: 'grabandgo', image: '/images/grabandgo.jpg', appStore: 'https://apps.apple.com/app/grab-go/id6738431717' },
+  { key: 'grabandgo', image: '/images/grabandgo.jpg', appStore: 'https://apps.apple.com/app/grab-go/id6738431717', page: '/grabandgo/' },
   { key: 'healthclaw', image: '/images/healthclaw.jpg', appStore: null, testflight: 'https://testflight.apple.com/join/PrvgP5sY' },
-  { key: 'localgpt', image: '/images/localgpt.jpg', appStore: 'https://apps.apple.com/app/localgpt-offline-chatbot/id6749968509' },
+  { key: 'localgpt', image: '/images/localgpt.jpg', appStore: 'https://apps.apple.com/app/localgpt-offline-chatbot/id6749968509', page: '/localgpt/' },
 ]
 
 function Apps() {
@@ -54,6 +54,11 @@ function Apps() {
                       </a>
                     )}
                   </div>
+                  {app.page && (
+                    <div className="app-page-links">
+                      <a href={app.page} className="app-page-link">{t('apps.supportAndPrivacy')}</a>
+                    </div>
+                  )}
                 </div>
               </div>
             )

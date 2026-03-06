@@ -366,6 +366,22 @@ header nav a:hover::after { width: 100%; }
     border-radius: 5px;
 }
 
+.app-page-links {
+    margin-top: 0.75rem;
+}
+
+.app-page-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.app-page-link:hover {
+    color: var(--accent);
+}
+
 /* Services Section */
 .services-section {
     background: var(--primary);
