@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - HealthClaw</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Kadwa:700|Kadwa:400');
+
+        :root {
+            --text: #1f051a;
+            --background: #D4E4E9;
+            --primary: #008BB3;
+            --secondary: #33B5D6;
+            --accent: #E8853D;
+            --gradient-main: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kadwa', serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--background);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .privacy-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            background: var(--gradient-main);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 3rem 2rem;
+        }
+
+        .effective-date {
+            background: var(--background);
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+            color: var(--primary);
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(0, 139, 179, 0.2);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: var(--text);
+            margin: 1.5rem 0 1rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .section ul {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text);
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .highlight-box {
+            background: rgba(232, 133, 61, 0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .highlight-box p {
+            color: var(--text);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: rgba(0, 139, 179, 0.08);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-section h2 {
+            color: var(--text);
+            margin-bottom: 1rem;
+            border: none;
+            padding-bottom: 0;
+        }
+
+        .email-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        .email-link:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .back-button {
+            display: inline-block;
+            background: var(--gradient-main);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 139, 179, 0.3);
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 139, 179, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .header {
+                padding: 2rem 1.5rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 2rem 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="privacy-card fade-in">
+            <div class="header">
+                <h1>Datenschutzerklärung</h1>
+                <div class="subtitle">HealthClaw Mobile-App</div>
+            </div>
+            
+            <div class="content">
+                <div class="effective-date">
+                    <strong>Gültig ab:</strong> 7. März 2026
+                </div>
+
+                <p>Diese Datenschutzerklärung beschreibt, wie Lars Grof („wir", „uns" oder „unser") Informationen in der mobilen Anwendung „HealthClaw" (die „App") verarbeitet.</p>
+
+                <div class="section">
+                    <h2>1. Daten, die wir verarbeiten</h2>
+                    <div class="highlight-box">
+                        <p><strong>HealthClaw greift mit Ihrer ausdrücklichen Genehmigung auf Apple Health Daten zu.</strong></p>
+                    </div>
+                    
+                    <p>Wenn Sie HealthKit-Zugriff gewähren und einen Sync-Server konfigurieren, liest die App Gesundheitsdaten aus Apple Health und überträgt diese an eine Serveradresse, die <strong>Sie selbst</strong> angeben. Dies kann umfassen:</p>
+                    
+                    <ul>
+                        <li>Aktivitätsdaten (Schritte, Entfernung, Kalorien, Trainingsminuten)</li>
+                        <li>Herzfrequenz und Herzfrequenzvariabilität</li>
+                        <li>Schlafanalyse</li>
+                        <li>Trainingseinheiten</li>
+                        <li>Körpermaße (Gewicht, Größe, BMI)</li>
+                        <li>Vitalwerte (Blutdruck, Atemfrequenz, Blutsauerstoff)</li>
+                        <li>Stimmungs- und Achtsamkeitsdaten</li>
+                    </ul>
+
+                    <p><strong>Wichtig:</strong> Die App sendet diese Daten ausschließlich an eine Server-URL und einen API-Schlüssel, die Sie selbst konfigurieren. Wir betreiben keinen zentralen Server, der Nutzerdaten sammelt. Sie haben die volle Kontrolle darüber, wo Ihre Gesundheitsdaten gespeichert werden.</p>
+                </div>
+
+                <div class="section">
+                    <h2>2. Datenspeicherung und Kontrolle</h2>
+                    
+                    <p>Ihre Gesundheitsdaten werden an zwei Orten gespeichert:</p>
+                    <ul>
+                        <li><strong>Auf Ihrem Gerät:</strong> Innerhalb von Apple Health, verwaltet durch iOS.</li>
+                        <li><strong>Auf Ihrem Server:</strong> Unter der Serveradresse, die Sie in der App konfigurieren. Sie sind allein verantwortlich für die Sicherheit und Verwaltung dieses Servers.</li>
+                    </ul>
+                    
+                    <p>Wir haben keinen Zugriff auf Ihren konfigurierten Server, Ihren API-Schlüssel oder die von der App übertragenen Gesundheitsdaten. Die App erfordert kein Konto bei uns und überträgt keine Daten an unsere Infrastruktur.</p>
+                </div>
+
+                <div class="section">
+                    <h2>3. Keine Weitergabe an Dritte</h2>
+                    <div class="highlight-box">
+                        <p><strong>Ausgenommen:</strong> Apples Absturzberichtsdienst (falls aktiviert)</p>
+                    </div>
+                    
+                    <p>Wir verkaufen, teilen oder übertragen Ihre Gesundheitsdaten nicht an Dritte. Der einzige beteiligte externe Dienst ist Apples Absturzberichterstattung (falls Sie dies über die Datenschutzeinstellungen Ihres Geräts aktiviert haben), die uns anonymisierte Absturzberichte zur Verbesserung der App-Stabilität liefert.</p>
+                </div>
+
+                <div class="section">
+                    <h2>4. Nutzung von HealthKit-Daten</h2>
+                    
+                    <p>Gemäß den Anforderungen von Apple:</p>
+                    <ul>
+                        <li>HealthKit-Daten werden ausschließlich zum Zweck der Synchronisierung Ihrer Gesundheitsinformationen mit Ihrem konfigurierten Server für persönliche Gesundheitsanalysen verwendet.</li>
+                        <li>HealthKit-Daten werden niemals für Werbung, Marketing oder Data Mining verwendet.</li>
+                        <li>HealthKit-Daten werden niemals an Dritte verkauft.</li>
+                        <li>HealthKit-Daten werden nicht ohne Ihre ausdrückliche Zustimmung an Dritte weitergegeben.</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2>5. Datenschutz für Kinder</h2>
+                    
+                    <p>Die App ist nicht für die Nutzung durch Kinder unter 13 Jahren bestimmt. Wir erheben wissentlich keine personenbezogenen Daten von Kindern. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und glauben, dass Ihr Kind die App genutzt hat, kontaktieren Sie uns bitte.</p>
+                </div>
+
+                <div class="section">
+                    <h2>6. Änderungen dieser Datenschutzerklärung</h2>
+                    
+                    <p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden in der App oder auf unserer Website veröffentlicht. Wir empfehlen Ihnen, diese Erklärung regelmäßig zu überprüfen.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h2>7. Kontakt</h2>
+                    <p>Bei Fragen oder Bedenken zu dieser Datenschutzerklärung kontaktieren Sie uns bitte unter:</p>
+                    <a href="mailto:lars.app.development@gmail.com" class="email-link">lars.app.development@gmail.com</a>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="/healthclaw/" class="back-button">&larr; Zurück zu HealthClaw</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate sections on scroll
+            const sections = document.querySelectorAll('.section');
+            
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html> 
